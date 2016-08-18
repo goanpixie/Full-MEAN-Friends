@@ -1,0 +1,42 @@
+<!-- Landing page=================================================== 
+ -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <input type="text" ng-model="search">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Show</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        <tbody>
+            <tr data-ng-repeat="friend in friends">
+                <td>
+                    {{friend.firstName}}
+                </td>
+                <td>
+                    {{friend.lastName}}
+                </td>
+                <td>
+                    <button>Show</button>
+                </td>
+                <td>
+                    <button>Edit</button>
+                </td>
+                <td>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button><a href="#/friends/new">New Friend</a></button>
+</body>
+
+</html>
